@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.frontlinesms.core</groupId>
+	<artifactId>mega-project</artifactId>
+	<name>frontlinesms mega daddy</name>
+	<version>1.7.00-beta-4-test-SNAPSHOT</version>
+	<description>Parent POM for inheritance by POMs in FrontlineSMS core, dist, plugins etc.</description>
+	<packaging>pom</packaging>
+	<licenses>
+		<license>
+			<name>GNU Lesser General Public License v3 or later</name>
+			<url>http://www.gnu.org/copyleft/lesser.html</url>
+			<distribution>manual</distribution>
+			<comments>
+				FrontlineSMS - http://www.frontlinesms.com
+				Copyright 2007, 2008 kiwanja
+				
+				This file is part of FrontlineSMS.
+				
+				FrontlineSMS is free software: you can redistribute it and/or modify it
+				under the terms of the GNU Lesser General Public License as published by
+				the Free Software Foundation, either version 3 of the License, or (at
+				your option) any later version.
+				
+				FrontlineSMS is distributed in the hope that it will be useful, but
+				WITHOUT ANY WARRANTY; without even the implied warranty of
+				MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser
+				General Public License for more details.
+				
+				You should have received a copy of the GNU Lesser General Public License
+				along with FrontlineSMS. If not, see http://www.gnu.org/licenses/.
+			</comments>
+		</license>
+	</licenses>
+	
+	<scm>
+		<connection>scm:git://github.com/${github.projectOwner}/${github.projectName}.git</connection>
+		<developerConnection>scm:git:git@github.com:${github.projectOwner}/${github.projectName}.git</developerConnection>
+	</scm>
+	
+	<repositories>
+		<repository>
+			<id>frontlinesms.repo</id>
+			<name>FrontlineSMS Maven repository</name>
+			<url>http://dev.frontlinesms.com/m2repo</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>frontlinesms.repo</id>
+			<name>FrontlineSMS Maven repository</name>
+			<url>http://dev.frontlinesms.com/m2repo</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<distributionManagement>
+		<repository>
+			<id>frontlinesms.repo</id>
+			<name>FrontlineSMS Maven repository</name>
+			<url>ftp://dev.frontlinesms.com</url>
+		</repository>
+	</distributionManagement>
+  
+	<properties>
+		<!-- Force Maven to use UTF-8 encoding when copying resources, rather than using the 
+			platform default. -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
+		<!-- repository dependencies -->
+		<github.projectOwner>frontlinesms</github.projectOwner>
+		<github.projectName>${project.artifactId}</github.projectName>
+	</properties>
+
+	<build>	
+		<plugins>
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.1</version>
+				<configuration>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+				</configuration>
+			</plugin>
+		</plugins>
+		
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ftp</artifactId>
+				<version>1.0-beta-6</version>
+			</extension>
+		</extensions>
+	</build>
+	
+	<modules>
+		<module>pom-parent</module>
+		<module>core</module>
+		<module>plugin-forms</module>
+		<!--<module>plugin-httptrigger</module>
+		<module>plugin-translation</module>
+		<module>plugin-reminders</module>
+		<module>masabi-forms</module>
+		<module>dist</module>-->
+	</modules>
+</project>
