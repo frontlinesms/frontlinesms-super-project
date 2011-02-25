@@ -16,3 +16,6 @@
 [submodule "plugin-template"]
 	path = plugin-template
 	url = git://github.com/frontlinesms/frontlinesms-plugin-template.git
+[submodule "dist"]
+	path = dist
+	url = git://github.com/frontlinesms/frontlinesms-dist.git
