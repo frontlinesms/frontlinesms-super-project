@@ -4,3 +4,6 @@
 [submodule "plugin-forms"]
 	path = plugin-forms
 	url = git://github.com/frontlinesms/frontlinesms-plugin-forms.git
+[submodule "plugin-httptrigger"]
+	path = plugin-httptrigger
+	url = git://github.com/frontlinesms/frontlinesms-plugin-httptrigger.git
