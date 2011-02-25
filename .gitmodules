@@ -19,3 +19,6 @@
 [submodule "dist"]
 	path = dist
 	url = git://github.com/frontlinesms/frontlinesms-dist.git
+[submodule "pom-parent"]
+	path = pom-parent
+	url = git://github.com/frontlinesms/frontlinesms-pom-parent.git
