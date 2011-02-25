@@ -10,3 +10,6 @@
 [submodule "plugin-translation"]
 	path = plugin-translation
 	url = git://github.com/frontlinesms/frontlinesms-plugin-translation.git
+[submodule "plugin-reminders"]
+	path = plugin-reminders
+	url = git://github.com/frontlinesms/frontlinesms-plugin-reminders.git
