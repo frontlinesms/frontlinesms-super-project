@@ -95,10 +95,10 @@
 		<module>pom-parent</module>
 		<module>core</module>
 		<module>plugin-forms</module>
-		<!--<module>plugin-httptrigger</module>
+		<module>plugin-httptrigger</module>
 		<module>plugin-translation</module>
 		<module>plugin-reminders</module>
 		<module>masabi-forms</module>
-		<module>dist</module>-->
+		<module>dist</module>
 	</modules>
 </project>
