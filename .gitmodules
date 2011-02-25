@@ -13,3 +13,6 @@
 [submodule "plugin-reminders"]
 	path = plugin-reminders
 	url = git://github.com/frontlinesms/frontlinesms-plugin-reminders.git
+[submodule "plugin-template"]
+	path = plugin-template
+	url = git://github.com/frontlinesms/frontlinesms-plugin-template.git
