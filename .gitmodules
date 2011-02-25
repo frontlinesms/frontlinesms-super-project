@@ -1,3 +1,6 @@
 [submodule "core"]
 	path = core
 	url = git://github.com/frontlinesms/frontlinesms-core.git
+[submodule "plugin-forms"]
+	path = plugin-forms
+	url = git://github.com/frontlinesms/frontlinesms-plugin-forms.git
